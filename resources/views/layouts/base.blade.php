@@ -42,7 +42,7 @@
                 @endif
 
                 <!-- Page Content -->
-                <main class="px-2 md:px-6">
+                <main class="px-2 md:px-6 dark:text-gray-200">
                     {{ $slot }}
                 </main>
             </div>
