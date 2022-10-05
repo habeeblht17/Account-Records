@@ -1,6 +1,6 @@
-<x-app-layout>
+<x-base-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight dark:text-gray-200">
             {{ __('Profile') }}
         </h2>
     </x-slot>
@@ -42,4 +42,4 @@
             @endif
         </div>
     </div>
-</x-app-layout>
+</x-base-layout>
