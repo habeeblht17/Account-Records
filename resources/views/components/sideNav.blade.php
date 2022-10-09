@@ -1,8 +1,7 @@
 <aside class="">
     <!--Sidenav -->
-    <div class="absolute py-4 h-[1024px] border-r-2 border-gray-100 inset-y-0
-        lg:flex flex-col transition ease-in-out delay-50ms
-        lg:opacity-100 lg:relative z-20 w-64 bg-white text-gray-700
+    <div class="absolute h-[1230px] py-4 border-r-2 border-gray-100 inset-y-0
+        lg:flex flex-col  lg:relative z-20 w-64 bg-white text-gray-700
         p-3 dark:bg-gray-900 dark:border-gray-800 dark:text-gray-100"
         id="sideBar">
 

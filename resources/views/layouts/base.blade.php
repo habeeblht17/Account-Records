@@ -9,6 +9,12 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+        <!-- Styles -->
+        <style>
+            [x-cloak] {
+                display: none;
+            }
+        </style>
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -20,7 +26,7 @@
     x-data="{'darkMode': false}"
     x-init="
     darkMode = JSON.parse(localStorage.getItem('darkMode'));
-    $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
+    $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))" x-cloak>
     <div :class="{'dark': darkMode === true}">
         <div class="flex min-h-screen bg-gray-100 dark:bg-gray-900">
             <div class="">
