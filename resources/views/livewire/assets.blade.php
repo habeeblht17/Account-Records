@@ -1,6 +1,6 @@
 <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight dark:bg-gray-900 dark:text-gray-100">
-        {{ __('Asset') }}
+        {{ __('Finance') }}
     </h2>
 </x-slot>
 
@@ -18,9 +18,8 @@
         <div class="bg-white p-6 overflow-hidden shadow-xl sm:rounded-lg dark:bg-gray-800 dark:text-gray-100">
             <div class="flex justify-between">
                 <x-jet-button wire:click="showAddAsset">
-                    {{ __('Add Asset') }}
+                    {{ __('Add Finance') }}
                 </x-jet-button>
-
             </div>
 
             <!-- Filter section -->
@@ -189,7 +188,7 @@
             <!--  Add Asset Form -->
             <x-jet-dialog-modal wire:model="modalFormVisible">
                 <x-slot name="title">
-                    {{ __('Add Asset') }}
+                    {{ __('Add Finance') }}
                 </x-slot>
 
                 <x-slot name="content">
@@ -204,7 +203,7 @@
                     <div class="col-span-6 sm:col-span-4 mt-4">
                         <x-jet-label for="type" value="{{ __('Type') }}" />
                         <select id="type" type="text" class="mt-1 block w-full border-gray-300 focus:border-indigo-300
-                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
+                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm dark:border-gray-900 dark:bg-gray-700 dark:text-gray-200"
                             wire:model.defer="type">
                             <option></option>
                             <option>Inflow</option>
@@ -217,7 +216,7 @@
                     <div class="col-span-6 sm:col-span-4 mt-4">
                         <x-jet-label for="description" value="{{ __('Description') }}" />
                         <textarea id="description" type="text" cols="3" rows="3" class="mt-1 block w-full border-gray-300
-                            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
+                            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm dark:border-gray-900 dark:bg-gray-700 dark:text-gray-200"
                             wire:model.defer="description" >
                         </textarea>
                         <x-jet-input-error for="description" class="mt-2" />
